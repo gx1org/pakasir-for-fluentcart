@@ -41,7 +41,7 @@ After creating a project, please save the `slug` and the `api key`. You will nee
 
 2. Click `Edit Proyek` button, input the following webhook URL:
 ```
-https://example.com/
+https://example.com/?fluent-cart=fct_payment_listener_ipn&method=pakasir
 ```
 _Replace `example.com` with you actual wordpress domain._
 
