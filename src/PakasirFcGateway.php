@@ -43,7 +43,8 @@ class PakasirFcGateway extends AbstractPaymentGateway
     $amount = $payment->transaction->total / 100;
     $orderId = $payment->order->id;
     $slug = $this->settings->get('pakasir_slug');
-    $payUrl = "https://app.pakasir.com/pay/$slug/$amount?order_id=$orderId";
+	$redirect =  home_url()."/shop";
+    $payUrl = "https://app.pakasir.com/pay/$slug/$amount?order_id=$orderId&redirect=$redirect";
     return [
       'status' => 'success',
       'redirect_to' => $payUrl,
